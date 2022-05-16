@@ -3,7 +3,7 @@ import { useState, useEffect, useContext } from 'react'
 import DataContext from '../context/DataContext'
 import ColorModeContext from '../context/ColorModeContext'
 
-import Header from '../components/shared/Header'
+import Header from '../components/Header'
 
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
@@ -133,7 +133,7 @@ const RegionFilter = ({ filter, selectRegion }) => {
   return (
     <Box>
       <FormControl
-        sx={{ 
+        sx={{
           'fieldset': {
             border: colorMode === 'dark' && 'none'
           }
@@ -151,7 +151,7 @@ const RegionFilter = ({ filter, selectRegion }) => {
           }}
         >
           {regions.map((region, i) => (
-            <MenuItem 
+            <MenuItem
               key={i}
               value={region}
               root={{ color: 'red' }}
@@ -206,7 +206,7 @@ const CountryList = ({ countries }) => {
                 <CardContent sx={{ padding: '2em' }}>
                   <Typography
                     variant='h6'
-                    sx={{ 
+                    sx={{
                       marginBottom: '1em',
                       fontWeight: '900'
                     }}

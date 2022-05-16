@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 
-import ColorModeContext from '../../context/ColorModeContext'
+import ColorModeContext from '../context/ColorModeContext'
 
 import AppBar from '@mui/material/AppBar'
 import Typography from '@mui/material/Typography'
