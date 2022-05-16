@@ -8,6 +8,8 @@ import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 import LightModeIcon from '@mui/icons-material/LightMode'
+import Link from '@mui/material/Link'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const Header = () => {
 
@@ -32,33 +34,49 @@ const Header = () => {
         backgroundColor: colorMode === 'light' ? 'white' : 'hsl(209, 23%, 22%)',
         color: 'inherit',
         padding: '1em',
-        position: 'relative'
+        position: 'relative',
+        userSelect: 'none'
       }}
     >
       <Typography
-        variant="h6"
+        variant='h6'
         sx={{
-          fontWeight: '600'
+          fontWeight: '600',
         }}
       >
         Which country in the world?
       </Typography>
+      <IconButton
+        sx={{
+          position: 'relative',
+          marginLeft: 'auto'
+        }}
+      >
+        <Link
+          href='https://github.com/tomwf/country-flags'
+          underline='none'
+          target="_blank"
+          rel="noopener"
+          sx={{
+            position: 'absolute',
+            top: '0',
+            right: '0',
+            bottom: '0',
+            left: '0'
+          }}
+        >
+        </Link>
+        <GitHubIcon />
+      </IconButton>
       <Box
         sx={{
           display: 'flex',
           alignItems: 'center'
         }}
       >
-        <IconButton aria-label="toggle-theme" onClick={toggleMode} sx={{ color: 'inherit' }}>
+        <IconButton aria-label='toggle-theme' onClick={toggleMode} sx={{ color: 'inherit' }}>
           {colorMode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
         </IconButton>
-        <Typography
-          sx={{
-            textTransform: 'capitalize',
-          }}
-        >
-        {colorMode} mode
-        </Typography>
       </Box>
     </AppBar>
   )
