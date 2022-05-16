@@ -7,11 +7,11 @@ A simple app to learn about some general information of the all the countries in
 ## How To Use
 
 ```bash
-git clone rest-countries.git
+git clone country-flags.git
 ```
 Navigate into the directory:
 ```bash
-cd rest-countries
+cd country-flags
 ```
 Install the dependencies:
 ```bash
@@ -28,4 +28,4 @@ http://localhost:5000
 
 ## Link
 
-Live Demo: [Country flags]()
+Live Demo: [Country flags](https://tomwf-country-flags.herokuapp.com/)
