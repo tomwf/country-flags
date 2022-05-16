@@ -7,7 +7,7 @@ A simple app to learn about some general information of the all the countries in
 ## How To Use
 
 ```bash
-git clone country-flags.git
+git clone https://github.com/tomwf/country-flags.git
 ```
 Navigate into the directory:
 ```bash
