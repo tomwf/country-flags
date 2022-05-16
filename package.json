@@ -1,0 +1,18 @@
+{
+  "name": "country-flags",
+  "version": "1.0.0",
+  "description": "A simple app to learn about some general information of the all the countries in the world.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon --delay 2.5 server/server.js",
+    "test": "mocha server/tests --recursive --ui tdd --exit"
+  },
+  "author": "tomwf",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "react-router-dom": "^6.3.0"
+  }
+}
