@@ -74,7 +74,7 @@ const Header = () => {
           alignItems: 'center'
         }}
       >
-        <IconButton aria-label='toggle-theme' onClick={toggleMode} sx={{ color: 'inherit' }}>
+        <IconButton aria-label='toggle-theme' onClick={toggleMode}>
           {colorMode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
         </IconButton>
       </Box>
