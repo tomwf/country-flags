@@ -1,13 +1,11 @@
 const express = require('express')
 const axios = require('axios').default;
 const path = require('path')
+const cors = require('cors')
 const app = express()
 
-// Allow Cross Origin Requests
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
-  next()
-})
+// Allow client to make request to the sever
+app.use(cors())
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'public')))
