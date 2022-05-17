@@ -47,12 +47,14 @@ const Header = () => {
         Which country in the world?
       </Typography>
       <IconButton
+        aria-label='Github button'
         sx={{
           position: 'relative',
           marginLeft: 'auto'
         }}
       >
         <Link
+          title='Check out the link of the github repository'
           href='https://github.com/tomwf/country-flags'
           underline='none'
           target="_blank"

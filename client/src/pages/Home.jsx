@@ -201,6 +201,7 @@ const CountryList = ({ countries }) => {
                 <CardMedia
                   component='img'
                   image={country.flags.svg}
+                  alt={`Flag of ${country.name}`}
                   height={200}
                 />
                 <CardContent sx={{ padding: '2em' }}>
