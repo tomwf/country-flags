@@ -18,7 +18,7 @@ function App() {
 
   function fetchData() {
 
-    fetch('http://localhost:5000/api/all')
+    fetch('/api/all')
       .then(res => res.json())
       .then(data => {
 
