@@ -32,7 +32,7 @@ function App() {
   }
 
   const [countryData, setCountryData] = useState([])
-  const [colorMode, setColorMode] = useState('light')
+  const [colorMode, setColorMode] = useState('dark')
   const extendedTheme = createTheme({
     ...theme,
     palette: {
@@ -72,7 +72,8 @@ function App() {
 
     } else {
 
-      mode = 'light'
+      // Default color mode
+      mode = 'dark'
 
       localStorage.setItem('colorMode', mode)
       setColorMode(mode)
